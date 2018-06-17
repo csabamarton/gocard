@@ -12,7 +12,7 @@ func main() {
 
 	fmt.Println(remainingCards.toString())
 
-
+	hand.saveToFile("my_cards")
 }
 
 
