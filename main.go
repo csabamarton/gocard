@@ -3,7 +3,7 @@ package main
 import "fmt"
 
 func main() {
-	cards := newDeck()
+	cards := newDeckFromFile("my_cards")
 
 	hand, remainingCards := deal(cards, 5)
 
@@ -12,7 +12,7 @@ func main() {
 
 	fmt.Println(remainingCards.toString())
 
-	hand.saveToFile("my_cards")
+	cards.saveToFile("my_cards2")
 }
 
 
